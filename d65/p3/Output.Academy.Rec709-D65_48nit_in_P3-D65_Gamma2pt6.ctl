@@ -21,7 +21,8 @@ const Chromaticities limitingPri = // Rec.709 Primaries / D65 White
         {0.3127, 0.3290}
     };
     
-const float peakLuminance = 100.; // luminance the tone scale highlight rolloff will target in cd/m^2 (nits)
+const float peakLuminance = 100;  // = 48 * (100/48); 
+                                  // luminance the tone scale highlight rolloff will target in cd/m^2 (nits)
 const bool scale_white = false;   // apply scaling to compress output so that largest channel hits 1.0; usually enabled when using a limiting white different from the encoding white
 
 // Encoding
